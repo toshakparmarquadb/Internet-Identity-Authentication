@@ -13,14 +13,6 @@ To learn more before you start working with `icp_auth`, see the following docume
 - [ic-cdk-macros](https://docs.rs/ic-cdk-macros)
 - [Candid Introduction](https://internetcomputer.org/docs/current/developer-docs/backend/candid/)
 
-If you want to start working on your project right away, you might want to try the following commands:
-
-```bash
-cd icp_auth/
-dfx help
-dfx canister --help
-```
-
 ## Running the project locally
 
 If you want to test your project locally, you can use the following commands:
