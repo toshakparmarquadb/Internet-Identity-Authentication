@@ -1,4 +1,4 @@
-# `icp_auth`
+# `icp_auth (Internet definity Authentication)` 
 
 Welcome to your new `icp_auth` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
@@ -17,6 +17,31 @@ To learn more before you start working with `icp_auth`, see the following docume
 
 If you want to test your project locally, you can use the following commands:
 
+## Now Continue See and working with this Repo using theses steps:
+
+### 1. Clone This Repo:
+```bash
+  # Clone the git repo
+  git init
+  git clone <git repo link>
+
+  # Open the Code in Code Editor VS Code.
+  code .
+```
+
+### 2. Install Dependencies run following commands: 
+```bash
+  # Install Dependencies in Frontend:
+  cd src/icp_auth_frontend
+  npm install
+
+  # Back to Root Directory and go to project directory
+  cd ~
+  cd <directory_name>
+```
+
+### 3. Deploy the Backend and Frontend:
+
 ```bash
 # Starts the replica, running in the background
 dfx start --background
@@ -24,10 +49,9 @@ dfx start --background
 # Deploys your canisters to the replica and generates your candid interface
 dfx deploy
 ```
-
 Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
 
-If you have made changes to your backend canister, you can generate a new candid interface with
+### 4. Genrate & Run the Frontend Code.
 
 ```bash
 npm run generate
@@ -38,7 +62,9 @@ at any time. This is recommended before starting the frontend development server
 If you are making frontend changes, you can start a development server with
 
 ```bash
-npm start
+   # Run the Frontend Code..
+   cd src/icp_auth_frontend
+   npm start
 ```
 
 Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
