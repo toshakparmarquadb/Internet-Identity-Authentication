@@ -9,6 +9,9 @@ dotenv.config({ path: '../../.env' });
 export default defineConfig({
   build: {
     emptyOutDir: true,
+    rollupOptions: {
+      external: ['@reduxjs/toolkit']
+    }
   },
   optimizeDeps: {
     esbuildOptions: {
